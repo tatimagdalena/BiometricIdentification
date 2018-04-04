@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     
     @IBAction func authenticate(_ sender: UIButton) {
         // Ask for authentication based on fallback type
-        biometricAuth.authenticateUser { [weak self] authError in
+        biometricAuth.authenticate { [weak self] authError in
             if let error = authError {
                 DispatchQueue.main.async {
                     self?.showAlert(error: error)

@@ -64,7 +64,7 @@ class BiometricIDAuth {
         }
     }
     
-    func authenticateUser(completion: @escaping (AuthenticationError?) -> Void) {
+    func authenticate(completion: @escaping (AuthenticationError?) -> Void) {
         guard canEvaluatePolicy() else {
             completion(.notAvailable)
             return
