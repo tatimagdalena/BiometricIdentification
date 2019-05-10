@@ -9,10 +9,10 @@ Copy `BiometricIDAuth.swift` into your project.
 
 ## Usage
 
-The simplest way to use it is creating a `BiometricIDAuth` instance and calling the `authenticate` method on it.
+The simplest way to use it is by creating a `BiometricIDAuth` instance and calling the `authenticate` method on it.
 
 ```Swift
-// Initialize with a reason to be using the Biometric Identification and a fallback type
+// Initialize it with a reason to be using the Biometric Identification and a fallback type
 let biometricAuth = BiometricIDAuth(reason: "Some reason to be using Biometric Authentication",
                                     fallback: .devicePasscode)
 
